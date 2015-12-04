@@ -9,4 +9,4 @@
             /  /
             `='     spotResponder.py <broadcast>
             
-SpotResponder is an active scanner to detect Responder running on your network
+## SpotResponder is an active scanner to detect Responder running on ur LAN
