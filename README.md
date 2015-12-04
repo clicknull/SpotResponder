@@ -1,6 +1,6 @@
 # SpotResponder
 
-    print ("""
+    
                  ,=.
       +_.       /  /
       ; \____,-==-.-_*- - -SPOT
@@ -8,4 +8,5 @@
       `  `'--/  /---/*- -RESPONDER
             /  /
             `='     spotResponder.py <broadcast>
-            """)
+            
+SpotResponder is an active scanner to detect Responder running on your network
