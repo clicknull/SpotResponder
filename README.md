@@ -7,6 +7,6 @@
       //_    `----'-=)           @tfairane
       `  `'--/  /---/*- -RESPONDER
             /  /
-            `='     spotResponder.py <broadcast>
+            `='     spotResponder.py
             
 `SpotResponder is an active scanner to detect Responder running on ur LAN`
