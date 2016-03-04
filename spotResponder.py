@@ -52,8 +52,8 @@ def CounterResponder(broadcast, timeout=5):
     try:
         s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
         s.setsockopt(SOL_SOCKET, SO_BROADCAST, 1)
-        s.sendto(str(p), (broadcast, 137))
         s.settimeout(timeout)
+        s.sendto(str(p), (broadcast, 137))
         recv_data, addr = s.recvfrom(1024)
         if recv_data[7] == "\x01": #NBNSAnswer ?
             print ("RESPONDER:DETECTED IP:" + addr[0] + " PROTO:NBNS")
