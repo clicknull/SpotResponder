@@ -51,6 +51,7 @@ def CounterResponder(broadcast, timeout=5):
     p = NBNSQuery()
     try:
         s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+        s.setsockopt(SOL_SOCKET, SO_BROADCAST, 1)
         s.sendto(str(p), (broadcast, 137))
         s.settimeout(timeout)
         recv_data, addr = s.recvfrom(1024)
