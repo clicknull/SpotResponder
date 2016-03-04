@@ -20,7 +20,7 @@ def banner():
       //_    `----'-=)           @tfairane
       `  `'--/  /---/*- -RESPONDER
             /  /
-            `='     spotResponder.py <broadcast>
+            `='     spotResponder.py
 
 SpotResponder is an active scanner to detect Responder running on ur LAN
             """)
@@ -36,9 +36,9 @@ class NBNSQuery():
     ("AdditionalRRS", "\x00\x00"),
     #https://support.microsoft.com/en-us/kb/194203
     ("NbtName",       "\x20\x45\x48\x45\x46\x45\x45\x45"\
-                        "\x42\x45\x47\x46\x46\x45\x4C\x45"\
-                        "\x50\x46\x46\x46\x45\x45\x42\x45"\
-                        "\x49\x45\x46\x46\x43\x45\x46\x43\x41\x00"),
+                      "\x42\x45\x47\x46\x46\x45\x4C\x45"\
+                      "\x50\x46\x46\x46\x45\x45\x42\x45"\
+                      "\x49\x45\x46\x46\x43\x45\x46\x43\x41\x00"),
     ("Type",          "\x00\x20"),
     ("Classy",        "\x00\x01")
     ])
@@ -68,7 +68,7 @@ if __name__ == '__main__':
     try:
 
         while True:
-            if(len(sys.argv)!=2):
+            if(len(sys.argv)!=1):
                 exit(0)
             Thread(target=CounterResponder, args=(sys.argv[1],)).start()
             time.sleep(eachsecond)
